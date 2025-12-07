@@ -270,6 +270,11 @@ def send_email(n_clicks, recipient, fig1, fig2):
     except Exception as e:
         return f"❌ Error sending email: {str(e)}"
 
+
 # -------------------- Run App --------------------
+
+server = app.server
+
 if __name__ == '__main__':
     app.run_server(debug=True, use_reloader=False)
+
